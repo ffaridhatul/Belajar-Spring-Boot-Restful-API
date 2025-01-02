@@ -1,9 +1,10 @@
-package programmerzamannow.restful.repository;
+package enigma_camp.belajar_restful_api.repository;
 
+import enigma_camp.belajar_restful_api.entity.Address;
+import enigma_camp.belajar_restful_api.entity.Contact;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import programmerzamannow.restful.entity.Address;
-import programmerzamannow.restful.entity.Contact;
+
 
 import java.util.List;
 import java.util.Optional;
