@@ -1,12 +1,13 @@
-package programmerzamannow.restful.controller;
+package enigma_camp.belajar_restful_api.controller;
 
+import enigma_camp.belajar_restful_api.entity.User;
+import enigma_camp.belajar_restful_api.model.*;
+import enigma_camp.belajar_restful_api.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-import programmerzamannow.restful.entity.User;
-import programmerzamannow.restful.model.*;
-import programmerzamannow.restful.service.ContactService;
+
 
 import java.util.List;
 

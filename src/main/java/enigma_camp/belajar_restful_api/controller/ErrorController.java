@@ -1,12 +1,12 @@
-package programmerzamannow.restful.controller;
+package enigma_camp.belajar_restful_api.controller;
 
+import enigma_camp.belajar_restful_api.model.WebResponse;
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
-import programmerzamannow.restful.model.WebResponse;
 
 @RestControllerAdvice
 public class ErrorController {

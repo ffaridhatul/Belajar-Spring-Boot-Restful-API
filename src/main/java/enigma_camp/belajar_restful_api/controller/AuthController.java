@@ -1,16 +1,17 @@
-package programmerzamannow.restful.controller;
+package enigma_camp.belajar_restful_api.controller;
 
+import enigma_camp.belajar_restful_api.entity.User;
+import enigma_camp.belajar_restful_api.model.LoginUserRequest;
+import enigma_camp.belajar_restful_api.model.TokenResponse;
+import enigma_camp.belajar_restful_api.model.WebResponse;
+import enigma_camp.belajar_restful_api.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import programmerzamannow.restful.entity.User;
-import programmerzamannow.restful.model.LoginUserRequest;
-import programmerzamannow.restful.model.TokenResponse;
-import programmerzamannow.restful.model.WebResponse;
-import programmerzamannow.restful.service.AuthService;
+
 
 @RestController
 public class AuthController {
