@@ -1,4 +1,4 @@
-package programmerzamannow.restful.model;
+package enigma_camp.belajar_restful_api.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.Email;

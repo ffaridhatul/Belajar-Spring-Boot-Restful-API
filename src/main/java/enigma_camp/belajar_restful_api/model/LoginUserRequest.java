@@ -1,4 +1,4 @@
-package programmerzamannow.restful.model;
+package enigma_camp.belajar_restful_api.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
