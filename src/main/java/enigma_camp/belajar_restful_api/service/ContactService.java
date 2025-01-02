@@ -1,5 +1,12 @@
-package programmerzamannow.restful.service;
+package enigma_camp.belajar_restful_api.service;
 
+import enigma_camp.belajar_restful_api.entity.Contact;
+import enigma_camp.belajar_restful_api.entity.User;
+import enigma_camp.belajar_restful_api.model.ContactResponse;
+import enigma_camp.belajar_restful_api.model.CreateContactRequest;
+import enigma_camp.belajar_restful_api.model.SearchContactRequest;
+import enigma_camp.belajar_restful_api.model.UpdateContactRequest;
+import enigma_camp.belajar_restful_api.repository.ContactRepository;
 import jakarta.persistence.criteria.Predicate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -11,13 +18,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
-import programmerzamannow.restful.entity.Contact;
-import programmerzamannow.restful.entity.User;
-import programmerzamannow.restful.model.ContactResponse;
-import programmerzamannow.restful.model.CreateContactRequest;
-import programmerzamannow.restful.model.SearchContactRequest;
-import programmerzamannow.restful.model.UpdateContactRequest;
-import programmerzamannow.restful.repository.ContactRepository;
+
 
 import java.util.ArrayList;
 import java.util.List;
