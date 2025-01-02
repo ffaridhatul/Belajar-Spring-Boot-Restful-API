@@ -1,4 +1,4 @@
-package enigma_camp.belajar_restful_api.model;
+package programmerzamannow.restful.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

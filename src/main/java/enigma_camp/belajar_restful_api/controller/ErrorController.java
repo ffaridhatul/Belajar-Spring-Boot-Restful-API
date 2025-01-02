@@ -1,12 +1,12 @@
-package enigma_camp.belajar_restful_api.controller;
+package programmerzamannow.restful.controller;
 
-import enigma_camp.belajar_restful_api.model.WebResponse;
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.server.ResponseStatusException;
+import programmerzamannow.restful.model.WebResponse;
 
 @RestControllerAdvice
 public class ErrorController {
@@ -19,7 +19,7 @@ public class ErrorController {
 
     @ExceptionHandler(ResponseStatusException.class)
     public ResponseEntity<WebResponse<String>> apiException(ResponseStatusException exception) {
-        return ResponseEntity.status(exception.getStatusCode()).
-                body(WebResponse.<String>builder().errors(exception.getReason()).build());
+        return ResponseEntity.status(exception.getStatusCode())
+                .body(WebResponse.<String>builder().errors(exception.getReason()).build());
     }
 }

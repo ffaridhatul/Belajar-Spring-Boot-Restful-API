@@ -1,5 +1,6 @@
 package programmerzamannow.restful.model;
 
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,11 +10,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class WebResponse<T> {
+public class UpdateUserRequest {
 
-    private T data;
+    @Size(max = 100)
+    private String name;
 
-    private String errors;
-
-    private PagingResponse paging;
+    @Size(max = 100)
+    private String password;
 }
